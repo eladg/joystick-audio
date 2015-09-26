@@ -6,17 +6,14 @@ if(window.location.hash === '#html5' || ! Mixer.detect.webAudio) {
   console.log('HTML5 mode')
   Mixer.detect.webAudio = false;
 }
+// base
+Mixer.createTrack('track0', { source: 'https://s3-us-west-1.amazonaws.com/audio-joystick/track0' });
 
-Mixer.createTrack('track1', { source: 'http://s3-us-west-1.amazonaws.com/algotech/track1' });
-Mixer.createTrack('track2', { source: 'http://s3-us-west-1.amazonaws.com/algotech/track2' });
-Mixer.createTrack('track3', { source: 'http://s3-us-west-1.amazonaws.com/algotech/track3' });
-Mixer.createTrack('track4', { source: 'http://s3-us-west-1.amazonaws.com/algotech/track4' });
-
-// Mixer.mute()
-
-// start
-// frameRunner.start();
-// frameRunner.add('updateMixerTween','everyFrame',Mixer.updateTween);
+// mixed
+Mixer.createTrack('track1', { source: 'https://s3-us-west-1.amazonaws.com/audio-joystick/track1' });
+Mixer.createTrack('track2', { source: 'https://s3-us-west-1.amazonaws.com/audio-joystick/track2' });
+Mixer.createTrack('track3', { source: 'https://s3-us-west-1.amazonaws.com/audio-joystick/track3' });
+Mixer.createTrack('track4', { source: 'https://s3-us-west-1.amazonaws.com/audio-joystick/track4' });
 
 console.log('Feature detection: %O', Mixer.detect)
 

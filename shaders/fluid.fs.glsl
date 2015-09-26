@@ -17,7 +17,7 @@ void main(void) {
   float d = distance(mousePos, xy);
 
 	if(length(mouseSpeed) > 0.) {
-		v = mix(v, mouseSpeed * 50., clamp(1. / d, 0., 1.));
+		v = mix(v, mouseSpeed * 20., clamp(1. / d, 0., 1.));
   }
 
   gl_FragColor = vec4(v.x, v.y, 0, 0);

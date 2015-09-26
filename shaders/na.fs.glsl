@@ -44,10 +44,10 @@ void main(void) {
   texel = texture2D(sampler2, pixel);
 
   //4.10.2 Velocity Mask
-  const float m = 1.;
-  const float n = 4.;
+  const float m = 0.5;
+  const float n = 1.;
   float ratio = min(length(field) / vmax, 1.);
-  vec4 alpha = (1. - pow(1. - ratio, m)) * (1. - pow(1. - texel, vec4(n)));
+  vec4 alpha = (1.5 - pow(1. - ratio, m)) * (1. - pow(1. - texel, vec4(n)));
   texel = alpha;
 
   //4.9 Noise Blending

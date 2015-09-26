@@ -488,7 +488,7 @@ function animate(app) {
 }
 
 function load() {
-  createImageTextureArray('img/pattern00.png', function(background) {
+  createImageTextureArray('img/pattern02.png', function(background) {
     init({
       background: background
     });

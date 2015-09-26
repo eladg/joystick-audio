@@ -3,6 +3,7 @@ html, body {
   font-family: 'Crimson Text', Verdana;
   margin: 0;
   padding: 0;
+  background: black;
 }
 
 div.title {
@@ -13,7 +14,6 @@ div.title {
   top: 0;
   left: 0;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.3);
 }
 
 div.title a {
@@ -23,7 +23,6 @@ div.title a {
 div.canvas-container {
   margin: 0 auto;
   padding: 0;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
 }
 
 a.fullscreen {
@@ -58,7 +57,7 @@ canvas {
 }
 
 #container {
-  width: 1024px;
+  /*width: 1024px;*/
   margin: auto;
 }
 
@@ -74,15 +73,6 @@ body.no-webgl div.fallback {
   display: block;
 }
 
-.description {
-  font-size: 13px;
-  padding: 5px;
-  text-align: left;
-  border: 1px solid #CCC;
-  background-color: #FFF1A8;
-  margin-bottom: 10px;
-}
-
 h1 {
   text-shadow: rgba(0, 0, 0, 0.2) 0 0 3px;
   margin: 5px;
@@ -92,7 +82,6 @@ h1 {
   position: relative;
   background: #E0ECFF;
   padding: 7px;
-  border: 1px solid #ccc;
   margin: 7px 0;
 }
 
@@ -112,3 +101,12 @@ h1 {
   font-size: 13px;
 }
 
+#container {
+  /*width: 512px;*/
+  margin: auto;
+}
+
+div.canvas-container {
+  /*width: 512px;*/
+  /*height: 512px;*/
+}
