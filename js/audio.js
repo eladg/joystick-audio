@@ -7,13 +7,13 @@ if(window.location.hash === '#html5' || ! Mixer.detect.webAudio) {
   Mixer.detect.webAudio = false;
 }
 // base
-Mixer.createTrack('track0', { source: 'https://s3-us-west-1.amazonaws.com/audio-joystick/track0' });
+Mixer.createTrack('track0', { source: 'https://s3-us-west-1.amazonaws.com/audio-joystick/track0', looping: true, gain: 1 });
 
 // mixed
-Mixer.createTrack('track1', { source: 'https://s3-us-west-1.amazonaws.com/audio-joystick/track1' });
-Mixer.createTrack('track2', { source: 'https://s3-us-west-1.amazonaws.com/audio-joystick/track2' });
-Mixer.createTrack('track3', { source: 'https://s3-us-west-1.amazonaws.com/audio-joystick/track3' });
-Mixer.createTrack('track4', { source: 'https://s3-us-west-1.amazonaws.com/audio-joystick/track4' });
+Mixer.createTrack('track1', { source: 'https://s3-us-west-1.amazonaws.com/audio-joystick/track1', looping: true, gain: 0.5 });
+Mixer.createTrack('track2', { source: 'https://s3-us-west-1.amazonaws.com/audio-joystick/track2', looping: true, gain: 0.5 });
+Mixer.createTrack('track3', { source: 'https://s3-us-west-1.amazonaws.com/audio-joystick/track3', looping: true, gain: 0.5 });
+Mixer.createTrack('track4', { source: 'https://s3-us-west-1.amazonaws.com/audio-joystick/track4', looping: true, gain: 0.5 });
 
 console.log('Feature detection: %O', Mixer.detect)
 
